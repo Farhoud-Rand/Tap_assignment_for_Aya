@@ -1,0 +1,134 @@
+/* Basic CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+/**************** Nav Bar ****************/
+/* Style the header */
+header {
+  color: #333;
+  padding: 25px 0;
+  width: 100%;
+}
+
+/* Style the navigation */
+nav {
+  width:1000px;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style: none;
+  text-align: right; /* Align text to the left */
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 35px; /* Add some spacing between menu items */
+}
+
+nav ul li:last-child {
+  margin-right:50px; /* Remove margin for the last menu item */
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+nav ul li a.active {
+  color: #D1884F; /* Change the color to whatever you desire */
+}
+/**************** Mian container ****************/
+.container {
+  display: flex;
+  height: 100vh; /* Make container 100% of the viewport height */
+  width: 1000px;
+  margin: 0 auto;
+}
+/**************** Left-column ****************/
+.left-section {
+  width: 600px;
+  padding-left: 100px;
+  height: 100%; /* Make sections 100% of the container height */
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.left-column {
+  flex: 1;
+  margin-bottom: 10px;
+  padding: 15px;
+  width: 350px;
+  text-align: left;
+}
+
+/* First row */
+h1 {
+  color: #3BBADB;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #008AAA; /* Color for the main text */
+  font-size: 37px; /* Font size for the main text */
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+
+.different-color {
+  color: #D1884F; /* Different color for the word "Designer" */
+}
+
+/* See more in paragraph */
+#more-text {
+  display: none;
+}
+
+#see-more-btn {
+  cursor: pointer;
+  color: #3BBADB;
+}
+
+/*buttons*/
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.btn-container button {
+  border: 2px solid #008AAA;
+  background-color: transparent;
+  color: #008AAA;
+  padding: 8px 15px; /* Adjust the vertical padding to increase the height */
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 50px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+  border-radius: 5px; /* Adjust the value for desired roundness */
+}
+
+.btn-container button.active {
+  border: 2px solid #008AAA; /* Solid blue border when active */
+  background-color: #008AAA; /* Solid blue background when active */
+  color: #fff; /* White text when active */
+}
+/**************** Right-column ****************/
+.right-section {
+  width: 400px;
+  padding-left: 10px;
+  height: 100%; /* Make sections 100% of the container height */
+}
+
+img {
+  box-shadow: -22px 11px 0px -12px #da9f72;
+  border-radius: 0 0 0 50%;
+  margin-top: 20px;
+  height: 360px;
+  width: 300px;
+}

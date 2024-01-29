@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Profile</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!------------------ Navigation Bar ------------------>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="changeColor(this)"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#" onclick="changeColor(this)"><i class="fas fa-user"></i> About Me</a></li>
+        <li><a href="#" onclick="changeColor(this)"><i class="fas fa-phone-alt"></i> Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!------------------ Main container ------------------>
+  <div class="container">
+    <!------------------ Left-column ------------------>
+    <div class="left-section">
+      <div class="left-column"> <!-- First row -->
+        <h1> Welcome to my site </h1>
+        <h2>Hi, I'm Aya Taleb,<br> a UI UX <span class="different-color">Designer.</span></h2>
+        <p>
+          I am a junior Software Engineer, a passionate and persistent person. I am always striving to be better in my
+          field. I lovethe spirit of teamwork, and I’m committed to being serious and, at the same time, comfortable
+          with every project Iwork on.
+          <span id="more-text">
+            I have self-learning, work under pressure, leadership, and good planning skills.I am looking forward to
+            being a part of Tap's family to improve my skills and abilities in Software.
+          </span>
+          <span id="see-more-btn">See more...</span>
+        </p>
+      </div>
+      <div class="left-column">
+        <div class="btn-container"> <!-- Flex box -->
+          <button onclick="toggleButton(this)" class="btn">Hire me!</button>
+          <button onclick="toggleButton(this)" class="btn">See my project</button>
+        </div>
+      </div>
+    </div>
+    <!------------------ Right-column ------------------>
+    <div class="right-section">
+      <img src="a.jpeg" alt="Image Description">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
